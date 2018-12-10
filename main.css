@@ -9,13 +9,12 @@ html {
 body {
 	margin: 0;
     line-height: 1.4;
-	max-height: 100%;
-	max-width: 100%;
 	font-size: 100%;
 	background: url("Background/79F09D7E-D40B-4D4D-BE77-D6E1CBA54200.JPG");
 	background-position: center;
   	background-repeat: no-repeat;
   	background-size: cover;
+	b
 }
 
 img{
@@ -24,39 +23,52 @@ img{
    width: auto;
 }
 
-header {
+.header {
 	display: grid;
+	justify-content: center;
+    position: relative;
+	height: 20%;
+	margin: 1% 0 1% 0;
+	top: 0;
 }
 
-header h1 {
-	margin: 2% 10% 2% 10%;
-	font-size: 25px;
+.header img {
+	height: 100px;
+}
+
+.article {
+	display: grid;
+	position: relative;
+	height: 30%;
 	text-align: justify;
+	justify-content: center;
+	margin: 1% 15% 1% 15%;
+}
+.article h1 {
+	font-size: 25px;
 }
 
-header img {
-	height: 10%;
-}
-
-nav {
+.menu {
     display: grid;
-	margin: 2% 0 2% 0;
+	position: relative;
+	height: 20%;
+	margin: 1% 0 1% 0;
 }
 
-nav ul {
+.menu ul {
     display: grid;
     justify-content: center;
-    grid-gap: 10%;
+    grid-gap: 5%;
     padding: 0;
     list-style: none;
     grid-template-columns: repeat(3, 200px);
 }
 
-nav li {
+.menu li {
     margin-top: auto;
     margin-bottom: auto;
 }
-nav a.button1 {
+.menu a.button1 {
 	display: block;
     background-color: black;
     text-decoration: none;
@@ -69,13 +81,13 @@ nav a.button1 {
     font-weight: 500;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-nav a.button1:hover {
+.menu a.button1:hover {
     font-weight: 500;
     background-color: white;
     color: black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-nav a.button2 {
+.menu a.button2 {
 	display: block;
     background-color: black;
     text-decoration: none;
@@ -88,13 +100,13 @@ nav a.button2 {
     font-weight: 500;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-nav a.button2:hover {
+.menu a.button2:hover {
     font-weight: 500;
     background-color: white;
     color: black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-nav a.button3 {
+.menu a.button3 {
 	display: block;
     background-color: black;
     text-decoration: none;
@@ -107,43 +119,70 @@ nav a.button3 {
     font-weight: 500;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-nav a.button3:hover {
+.menu a.button3:hover {
     font-weight: 500;
     background-color: white;
     color: black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-section {
+.section {
 	display: grid;
-	margin: 1% 0 2% 0;
+	position: relative;
+	height: 20%;
+	margin: 1% 0 1% 0;
 	grid-gap: 50px;
 	justify-content: center;
 	grid-template-areas: 'fb inst';
-	grid-template-columns: repeat(2, 50px);
+	grid-template-columns: repeat(2, 75px);
 }
 
-section a.buttonfb {
+.section a.buttonfb {
 	display: block;
 	grid-area: fb;
 }
 
-section a.buttonfb img {
+.section a.buttonfb img {
 	border-radius: 50%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-section a.buttoninst {
+.section a.buttoninst {
 	display: block;
 	grid-area: inst;
 }
 
-section a.buttoninst img {
+.section a.buttoninst img {
 	border-radius: 50%;	
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-footer {
+.footer {
 	display: grid;
+    position: fixed;
+	margin: 1% 0 0 0;
+	bottom: 0;
+	height: 10%;
+	width: 100%;
 	background: white;
+}
+
+.footer p {
+	text-align: center;
+	font-size: 15px;
+	padding: 10px;
+}
+
+@media screen and (max-width: 1440px) {
+  body {
+    max-height: 100%;
+	max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  body {
+    max-height: 100%;
+	max-width: 100%;
+  }
 }
