@@ -14,7 +14,6 @@ body {
 	background-position: center;
   	background-repeat: no-repeat;
   	background-size: cover;
-	b
 }
 
 img{
@@ -45,6 +44,7 @@ img{
 }
 .article h1 {
 	font-size: 25px;
+	color: black;
 }
 
 .menu {
