@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html {
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+    line-height: 1.4;
+    font-size: 100%;
+    max-width: 100%;
+    max-height: 100%;
+	background: url("../../IMG_3965.JPG");
+	background-position: center top bottom;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+img {
+    max-width: 100%;
+}
+
+nav {
+    display: grid;
+}
+nav ul {
+    display: grid;
+    justify-content: center;
+    grid-gap: 10px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(3, 150px);
+}
+
+nav li {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+nav a.button1 {
+	display: block;
+    background-color: black;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: 500;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+nav a.button1:hover {
+    font-weight: 500;
+    background-color: white;
+    color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+nav a.button2 {
+	display: block;
+    background-color: black;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: 500;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+nav a.button2:hover {
+    font-weight: 500;
+    background-color: white;
+    color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+nav a.button3 {
+	display: block;
+    background-color: black;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: 500;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+nav a.button3:hover {
+    font-weight: 500;
+    background-color: white;
+    color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+section {
+	display: grid;
+	grid-gap: 50px;
+	justify-content: center;
+	grid-template-areas: 'fb inst';
+	grid-template-columns: repeat(2, 100px);
+}
+
+section a.buttonfb {
+	display: block;
+	grid-area: fb;
+}
+
+section a.buttonfb img {
+	border-radius: 50%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+section a.buttoninst {
+	display: block;
+	grid-area: inst;
+}
+
+section a.buttoninst img {
+	border-radius: 50%;	
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer {
+	display: grid;
+	background: white;
+	height: 20%;
+}
