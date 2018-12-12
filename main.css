@@ -200,7 +200,7 @@ img{
     margin-bottom: auto;
 }
 
-.photos a.button1 {
+.photos a.button1, .photos a.button2, .photos a.button3 {
 	display: block;
     text-decoration: none;
     padding: 0.6em;
@@ -210,37 +210,7 @@ img{
     font-size: 1.4em;
     font-weight: 500;
 }
-.photos a.button1:hover {
-    font-weight: 500;
-    color: white;
-}
-
-.photos a.button2 {
-	display: block;
-    text-decoration: none;
-    padding: 0.6em;
-    text-align: center;
-    color: black;
-    text-transform: uppercase;
-    font-size: 1.4em;
-    font-weight: 500;
-}
-.photos a.button2:hover {
-    font-weight: 500;
-    color: white;
-}
-
-.photos a.button3 {
-	display: block;
-    text-decoration: none;
-    padding: 0.6em;
-    text-align: center;
-    color: black;
-    text-transform: uppercase;
-    font-size: 1.4em;
-    font-weight: 500;
-}
-.photos a.button3:hover {
+.photos a.button1:hover, .photos a.button2:hover, .photos a.button3:hover {
     font-weight: 500;
     color: white;
 }
@@ -268,7 +238,7 @@ img{
     margin-bottom: auto;
 }
 
-.projects a.button1 {
+.projects a.button1, .projects a.button2, .projects a.button3 {
 	display: block;
     text-decoration: none;
     padding: 0.6em;
@@ -278,37 +248,7 @@ img{
     font-size: 1.4em;
     font-weight: 500;
 }
-.projects a.button1:hover {
-    font-weight: 500;
-    color: white;
-}
-
-.projects a.button2 {
-	display: block;
-    text-decoration: none;
-    padding: 0.6em;
-    text-align: center;
-    color: black;
-    text-transform: uppercase;
-    font-size: 1.4em;
-    font-weight: 500;
-}
-.projects a.button2:hover {
-    font-weight: 500;
-    color: white;
-}
-
-.projects a.button3 {
-	display: block;
-    text-decoration: none;
-    padding: 0.6em;
-    text-align: center;
-    color: black;
-    text-transform: uppercase;
-    font-size: 1.4em;
-    font-weight: 500;
-}
-.projects a.button3:hover {
+.projects a.button1:hover, .projects a.button2:hover, .projects a.button3:hover {
     font-weight: 500;
     color: white;
 }
@@ -349,6 +289,11 @@ img{
     -moz-transform: scale(1);
     -moz-transition-timing-function: ease-out;
     -moz-transition-duration: 250ms;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	filter: grayscale(100%);
 }
 
 .row img:hover {
@@ -364,6 +309,11 @@ img{
     -moz-transition-duration: 250ms;
     position: relative;
     z-index: 99;
+	-webkit-filter: grayscale(0%);
+	-moz-filter: grayscale(0%);
+	-o-filter: grayscale(0%);
+	-ms-filter: grayscale(0%);
+	filter: grayscale(0%);
 }
 
 .menu {
@@ -508,16 +458,104 @@ img{
 	position: fixed;
 	grid-area: footer;
 	bottom: 0;
-	text-align: center;
+	text-align: left;
 	background: white;
-	width: 100%;
+	width: 100vw;
 	min-height: 6vh;
+	grid-template-areas: 'textp menufooter';
 }
 
-.footer p {
+.text p {
+	display: block;
+	grid-area: textp;
+	justify-content: flex-start;
+	align-content: center;
 	font-size: 1em;
 	padding: 1vh;
-	margin: auto;
+	text-transform: uppercase;
+	margin: 0;
+	grid-column-gap: 10vh;
+}
+
+.menufooter ul {
+    display: grid;
+	grid-area: menufooter;
+    justify-content: flex-end;
+	align-content: center;
+    padding: 1vh;
+	margin: 0;
+    list-style: none;
+	grid-template-areas: 'b1 b2 b3 b4';
+	grid-column-gap: 10vh;
+}
+
+.menufooter li {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.menufooter a.button1 {
+	display: block;
+	grid-area: b1;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.menufooter a.button2 {
+	display: block;
+	grid-area: b2;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.menufooter a.button3 {
+	display: block;
+	grid-area: b3;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.menufooter a.button4 {
+	display: block;
+	grid-area: b4;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.menufooter a.button1:hover {
+    font-weight: 500;
+    color: white;
+}
+
+.menufooter a.button2:hover {
+    font-weight: 500;
+    color: white;
+}
+
+.menufooter a.button3:hover {
+    font-weight: 500;
+    color: white;
+}
+
+.menufooter a.button4:hover {
+    font-weight: 500;
+    color: white;
 }
 
 @media only screen and (min-width: 1024px) {
