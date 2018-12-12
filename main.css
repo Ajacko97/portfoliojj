@@ -31,8 +31,6 @@ img{
 		'nav'
 		'section'
 		'footer';
-	grid-row-gap: auto;
-	grid-column-gap: auto;
 }
 
 .container2 {
@@ -47,8 +45,6 @@ img{
 		'contact'
 		'section'
 		'footer';
-	grid-row-gap: auto;
-	grid-column-gap: auto;
 }
 
 .container3 {
@@ -62,15 +58,39 @@ img{
 	grid-template-areas: 'header'
 		'about'
 		'footer';
-	grid-row-gap: auto;
-	grid-column-gap: auto;
 }
+
+.container4 {
+	display: grid;
+	width: 100vw;
+	height: 100vh;
+	background: url("Background/IMG_5201.JPG");
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	grid-template-areas: 'header'
+		'portfolio'
+		'footer';
+}
+
+.container5 {
+	display: grid;
+	width: 100vw;
+	height: 100vh;
+	background: url("Background/IMG_5201.JPG");
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+	grid-template-areas: 'header'
+		'photos'
+		'footer';
+}
+
 
 .header {
 	display: block;
 	grid-area: header;
 	text-align: center;
-	grid-auto-rows: 24vh;
 	min-height: 24vh;
 }
 
@@ -85,7 +105,6 @@ img{
 	text-align: justify;
 	justify-content: center;
 	margin: 0 15% 0 15%;
-	grid-auto-rows: 30vh;
 	min-height: 30vh;
 }
 .article h1 {
@@ -99,7 +118,6 @@ img{
 	text-align: justify;
 	justify-content: center;
 	margin: 0 20% 0 20%;
-	grid-row-gap: auto;
 	min-height: 70vh;
 	grid-template-areas: 'h1 h1'
 		'img p'
@@ -110,7 +128,6 @@ img{
 	grid-area: h1;
 	justify-content: center;
 	font-size: 1.7em;
-	grid-row-gap: 10vh;
 	min-height: 10vh;
 }
 
@@ -124,7 +141,6 @@ img{
 	border: outset;
 	border-color: black;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	grid-row-gap: 40vh;
 	min-height: 40vh;
 }
 
@@ -136,7 +152,6 @@ img{
 	grid-area: p;
 	margin: 5%;
 	font-size: 1em;
-	grid-row-gap: 40vh;
 	min-height: 40vh;
 }
 
@@ -146,14 +161,108 @@ img{
 	text-align: center;
 	justify-content: center;
 	margin: 0 20% 0 20%;
-	grid-row-gap: auto;
 	min-height: 50vh;
+}
+
+.portfolio {
+	display: grid;
+	grid-area: portfolio;
+	min-height: 70vh;
+	grid-template-areas: 'photos projects school';
+	grid-column-gap: repeat(3, 40vh);
+}
+
+.portfolio h1 {
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+.photos {
+	display: grid;
+	justify-content: flex-end;
+	align-content: flex-start;
+	text-align: center;
+	grid-area: photos;
+	min-height: 60vh;
+	grid-auto-columns: 40vh;
+}
+
+.projects {
+	display: grid;
+	justify-content: center;
+	align-content: flex-start;
+	text-align: center;
+	grid-area: projects;
+	min-height: 60vh;
+	grid-auto-columns: 40vh;
+}
+
+.school {
+	display: grid;
+	justify-content: flex-start;
+	align-content: flex-start;
+	text-align: center;
+	grid-area: school;
+	min-height: 60vh;
+	grid-auto-columns: 40vh;
+}
+
+.row {
+	display: flex;
+	grid-area: photos;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	padding: 0 4px;
+	min-height: 70vh;
+}
+
+.column {
+	flex: 25vw;
+	max-width: 25vw;
+	padding: 0 4px;
+	min-height: 70vh;
+}
+
+.column img {
+	width: 100vw;
+	margin-bottom: 6px;
+	border-radius: 10px;
+	vertical-align: middle;
+}
+
+.row img {
+	text-decoration: none;
+    display: inline-block;
+    transform: scale(1);
+    transition-timing-function: ease-out;
+    transition-duration: 250ms;
+    -webkit-transform: scale(1);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+}
+
+.row img:hover {
+	border-radius: 0;
+    transform: scale(1.35,1.37);
+    transition-timing-function: ease-out;
+    transition-duration: 250ms;
+    -webkit-transform: scale(1.35,1.37);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1.35,1.37);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+    position: relative;
+    z-index: 99;
 }
 
 .menu {
     display: grid;
 	grid-area: nav;
-	grid-auto-rows: 20vh;
 	min-height: 20vh;
 }
 
@@ -243,7 +352,6 @@ img{
 	align-content: flex-start;
 	grid-template-areas: 'fb inst';
 	grid-template-columns: repeat(2, 50px);
-	grid-auto-rows: 20vh;
 	min-height: 20vh;
 }
 
@@ -297,7 +405,6 @@ img{
 	text-align: center;
 	background: white;
 	width: 100%;
-	grid-auto-rows: 6vh;
 	min-height: 6vh;
 }
 
