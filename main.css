@@ -168,23 +168,81 @@ img{
 	display: grid;
 	grid-area: portfolio;
 	min-height: 70vh;
-	grid-template-areas: 'photos projects school';
-	grid-column-gap: repeat(3, 40vh);
+	grid-template-areas: 'photos projects';
+	grid-column-gap: repeat(2, 50vh);
 }
 
 .portfolio h1 {
-	font-size: 2em;
+	font-size: 3em;
 	text-transform: uppercase;
 }
 
 .photos {
 	display: grid;
-	justify-content: flex-end;
+	justify-content: center;
 	align-content: flex-start;
 	text-align: center;
 	grid-area: photos;
 	min-height: 60vh;
-	grid-auto-columns: 40vh;
+	grid-auto-columns: 50vh;
+}
+
+.photos ul {
+    display: grid;
+    justify-content: center;
+    padding: 0;
+	margin: 0;
+    list-style: none;
+}
+
+.photos li {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.photos a.button1 {
+	display: block;
+    text-decoration: none;
+    padding: 0.6em;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.photos a.button1:hover {
+    font-weight: 500;
+    color: white;
+}
+
+.photos a.button2 {
+	display: block;
+    text-decoration: none;
+    padding: 0.6em;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.photos a.button2:hover {
+    font-weight: 500;
+    color: white;
+}
+
+.photos a.button3 {
+	display: block;
+    text-decoration: none;
+    padding: 0.6em;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.photos a.button3:hover {
+    font-weight: 500;
+    color: white;
 }
 
 .projects {
@@ -194,17 +252,65 @@ img{
 	text-align: center;
 	grid-area: projects;
 	min-height: 60vh;
-	grid-auto-columns: 40vh;
+	grid-auto-columns: 50vh;
 }
 
-.school {
-	display: grid;
-	justify-content: flex-start;
-	align-content: flex-start;
-	text-align: center;
-	grid-area: school;
-	min-height: 60vh;
-	grid-auto-columns: 40vh;
+.projects ul {
+    display: grid;
+    justify-content: center;
+    padding: 0;
+	margin: 0;
+    list-style: none;
+}
+
+.projects li {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.projects a.button1 {
+	display: block;
+    text-decoration: none;
+    padding: 0.6em;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.projects a.button1:hover {
+    font-weight: 500;
+    color: white;
+}
+
+.projects a.button2 {
+	display: block;
+    text-decoration: none;
+    padding: 0.6em;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.projects a.button2:hover {
+    font-weight: 500;
+    color: white;
+}
+
+.projects a.button3 {
+	display: block;
+    text-decoration: none;
+    padding: 0.6em;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.projects a.button3:hover {
+    font-weight: 500;
+    color: white;
 }
 
 .row {
