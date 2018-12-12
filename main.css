@@ -102,13 +102,14 @@ img{
 .article {
 	display: grid;
 	grid-area: article;
-	text-align: justify;
 	justify-content: center;
+	align-content: flex-end;
 	margin: 0 15% 0 15%;
 	min-height: 30vh;
 }
 .article h1 {
 	font-size: 1.7em;
+	text-align: center;
 	color: black;
 }
 
