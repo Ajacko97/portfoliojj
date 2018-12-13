@@ -108,7 +108,7 @@ img{
 	min-height: 30vh;
 }
 .article h1 {
-	font-size: 1.7em;
+	font-size: 2em;
 	text-align: center;
 	color: black;
 }
@@ -128,7 +128,7 @@ img{
 	display: grid;
 	grid-area: h1;
 	justify-content: center;
-	font-size: 1.7em;
+	font-size: 2em;
 	min-height: 10vh;
 }
 
@@ -161,8 +161,29 @@ img{
 	grid-area: contact;
 	text-align: center;
 	justify-content: center;
+	align-content: space-between;
 	margin: 0 20% 0 20%;
 	min-height: 50vh;
+}
+
+.contactp {
+	align-content: center;
+	min-height: 20vh;
+}
+
+.contact h1 {
+	font-size: 2em;
+	min-height: 5vh;
+}
+
+.contact p {
+	font-size: 1.4em;
+	min-height: 5vh;
+}
+
+.contact h2 {
+	font-size: 2em;
+	min-height: 5vh;
 }
 
 .portfolio {
@@ -174,7 +195,7 @@ img{
 }
 
 .portfolio h1 {
-	font-size: 3em;
+	font-size: 2em;
 	text-transform: uppercase;
 }
 
@@ -208,7 +229,7 @@ img{
     text-align: center;
     color: black;
     text-transform: uppercase;
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: 500;
 }
 .photos a.button1:hover, .photos a.button2:hover, .photos a.button3:hover {
@@ -246,7 +267,7 @@ img{
     text-align: center;
     color: black;
     text-transform: uppercase;
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: 500;
 }
 .projects a.button1:hover, .projects a.button2:hover, .projects a.button3:hover, .projects a.button4:hover {
@@ -415,8 +436,7 @@ img{
 .section a.buttonfb {
 	display: block;
 	grid-area: fb;
-	margin: 0;
-	padding: 0;
+	align-content: flex-start;
 }
 
 .section a.buttonfb img {
@@ -437,6 +457,7 @@ img{
 .section a.buttoninst {
 	display: block;
 	grid-area: inst;
+	align-content: flex-start;
 }
 
 .section a.buttoninst img {
@@ -559,7 +580,15 @@ img{
     color: white;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 2560px) {
+	
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 2559px) {
+	
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
 	body {
 		max-width: 100%;
 		justify-content: center;
@@ -614,7 +643,7 @@ img{
 	}
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 601px) and (max-width: 768px) {
 	.container2 {
 		max-width: 100%;
 	}
@@ -676,7 +705,7 @@ img{
 	}
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 480px) and (max-width: 600px) {
 	.container2 {
 		max-width: 100%;
 	}
@@ -737,7 +766,7 @@ img{
 	}
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 479px) {
 	
 	.header {
 		max-width: 100%;
@@ -747,14 +776,27 @@ img{
 	
 	.menu {
 		min-height: 10vh;
-		align-content: flex-start;
+		align-content: stretch;
 	}
 	
 	.menu ul {
 		grid-template-columns: 30vh;
 		min-height: 10vh;
 		justify-content: center;
-		align-content: flex-start;
+		align-content: stretch;
+	}
+	
+	.contact {
+		grid-template-columns: 30vh;
+		min-height: 40vh;
+	}
+	
+	.contact h1, .contact h2 {
+		font-size: 1.5em;
+	}
+	
+	.contact p {
+		font-size: 1em;
 	}
 	
 	.article {
@@ -777,9 +819,10 @@ img{
 		grid-template-columns: 20vh;
 		grid-template-rows: 30vh;
 		justify-content: center;
-		align-content: center;
+		align-content: space-between;
 		grid-template-areas: 'photos'
 			'projects';
+		min-height: 70vh;
 	}
 	
 	.portfolio h1 {
@@ -802,15 +845,26 @@ img{
 	
 	.section {
 		min-height: 10vh;
+		align-content: flex-start;
+	}
+	
+	.buttonfb {
+		margin: 1vh 0;
+	}
+	
+	.buttoninst {
+		margin: 1vh 0;
 	}
 	
 	.about {
 		margin: 0 5%;
+		min-height: 60vh;
 	}
 	
 	.about h1 {
 		display: grid;
 		min-height: 10vh;
+		font-size: 1.5em;
 	}
 	
 	.about p {
@@ -826,6 +880,10 @@ img{
 		justify-content: flex-start;
 		align-content: flex-start;
 		min-height: 10vh;
+	}
+	
+	.footer {
+		min-height: 5vh;
 	}
 	
 	.menufooter ul {
