@@ -238,7 +238,8 @@ img{
 }
 .photos a.button1:hover, .photos a.button2:hover, .photos a.button3:hover {
     font-weight: 500;
-    color: white;
+    color: #918d8e;
+	opacity: 0.8;
 }
 
 .projects {
@@ -264,7 +265,7 @@ img{
     margin-bottom: auto;
 }
 
-.projects a.button1, .projects a.button2, .projects a.button3, .projects a.button4 {
+.projects a.button1, .projects a.button2, .projects a.button3 {
 	display: block;
     text-decoration: none;
     padding: 0.6em;
@@ -274,9 +275,10 @@ img{
     font-size: 1.2em;
     font-weight: 500;
 }
-.projects a.button1:hover, .projects a.button2:hover, .projects a.button3:hover, .projects a.button4:hover {
+.projects a.button1:hover, .projects a.button2:hover, .projects a.button3:hover {
     font-weight: 500;
-    color: white;
+    color: #918d8e;
+	opacity: 0.8;
 }
 
 .row {
@@ -822,7 +824,7 @@ img{
 	
 	.portfolio {
 		grid-template-columns: 20vh;
-		grid-template-rows: 30vh;
+		grid-template-rows: 40vh;
 		justify-content: center;
 		align-content: space-between;
 		grid-template-areas: 'photos'
@@ -838,7 +840,7 @@ img{
 		font-size: 1em;
 	}
 	
-	.projects a.button1, .projects a.button2, .projects a.button3, .projects a.button4 {
+	.projects a.button1, .projects a.button2, .projects a.button3 {
 		font-size: 1em;
 	}
 	
